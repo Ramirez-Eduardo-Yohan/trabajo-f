@@ -1,0 +1,33 @@
+SITIO WEB
+
+Este sitio web que busca brindar informacion en plan de publicidad de una empresa de evento y ventas de bebidas alcoholicas para
+mayores de edad.
+Trato de dar la mayor indepencia al dueño del local ya que podra:
+
+1) tener un usuario y contraseña brindado por mi
+2) podra introducir NOMBRE PRECIO E IMAGEN que luego se vera reflejado en el sitio web en lu cual podra (crear, borrar, editar)
+
+
+CARPETA DE ESTILO:
+    Se encuentra los estilos usados par la cracion de la pagina principal
+
+CARPETA DE IMAGENES
+    Se encuentran las imagenes necesarias requerida para la pagina principal
+
+CARPETA DE PHP 
+    Se encuentra las carpetas nesesarias para vinculacion y manipulacion de la base de datos
+
+ARCHIVOS EVENTOS
+    Se encuentra inforrmacion de los futuros evento que realizara el sitio web
+
+ARCHIVO INDEX
+    Es el archivo principal se encuentra toda la estructura y los elementos necesario para que el sitio 
+
+ARCHIVO INFPERSONAL
+    Se encuentra informacion sobre la empresa
+
+
+La pagina web cuenta con un menu que te permite navegar en el mismo dependiendo del 
+tipo de dispocitivo .
+Contenido principal de la pagina en donde se vera la e nprimera vista el proximo evento a realizar .
+en el pie de pagina se mostrara las rredes sociales mas usadas por la empresa

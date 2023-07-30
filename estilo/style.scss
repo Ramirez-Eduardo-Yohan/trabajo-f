@@ -1,0 +1,310 @@
+//variables
+$letarPrimaria:"Arial, Helvetica, sans-serif";
+$colorLetras:rgb(42, 27, 27);
+$coloresPrimarios:rgb(254, 21, 21);
+$colorTitulosSecundarios:rgb(69, 57, 57);
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+//COMANDOS GENERALES DE LA PAGINA 
+//TIPO COLUMNA
+body{
+    
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+// estilos nesesarios par la CEBEZERA
+header{
+    position: relative;
+    
+}
+.evento{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90vw;
+    height: 70vh;
+    background-color: antiquewhite;
+    border-radius: 5%;
+    background-image: url("../IMAGENES/bebidas/ideas-fiestas-tematicas.jpeg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    h2{
+        font-family:$letarPrimaria;
+        font-size: 35px;
+        font-weight: 500;
+        color: rgb(58, 32, 32);
+        text-transform: capitalize;
+        text-decoration:underline;
+    }
+    h3{
+        font-family: $letarPrimaria;
+        font-size: 20px;
+        color: rgb(61, 249, 65);
+    }
+}
+header div.contenedor{
+        position: fixed;
+        width: 100vw;
+        height: 10vh;
+        z-index: 1;
+        background-color:$coloresPrimarios;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        div.imagen{
+            display: flex;
+            flex-direction: row;
+            
+            img{
+                height: 50px;
+                border-radius: 50%;
+            }
+            h2{
+                align-self: center;
+            }
+        } 
+        
+        div.icono{
+            display: flex;
+            i.espacio{
+                padding-top: 50%;
+                margin-right: 20px;
+            
+
+            }
+        }
+        nav{
+            
+            background-color:$coloresPrimarios;
+            position: absolute;
+            z-index: 2;
+            height: 100vh;
+            width: 20vw;
+            right: 0vw;
+
+            .lista{
+                padding-left: 5px;
+                margin: 0px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+            }
+            .items{
+                
+                list-style-type: none;
+                a{
+                    color: black;
+                    font-size: 20px;
+                    text-decoration: none;
+                    
+                }
+            }
+
+        }
+        
+}
+.ver{
+    display: none;
+}
+//MAIN DE LA PAGINA
+main{
+    
+    position: relative;
+    //top: 10vh;
+    background-color: rgb(15, 15, 28);
+    padding: 5vw;
+    //border: solid 2px wheat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    //border: solid 5px wheat;
+    width: 100vw;
+    
+}
+section{
+    padding-top: 10vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+}
+.titulosSeccion{
+    color: $colorTitulosSecundarios;
+    background-color: rgb(181, 170, 137);
+    border-radius: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 5%;
+}
+.productoNombre{
+    color: rgb(12, 21, 12);
+    background-color: rgb(218, 204, 177);
+    border-radius: 5px;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 10px;
+}
+.contenedorImagen{
+    position:relative;
+    width: 350px;
+    height: auto;
+}
+.costo{
+    display: flex;
+    color: rgb(35, 1, 1);
+    padding-bottom: 5vw;
+    background-color:rgb(185, 215, 223);
+    width: auto;
+    
+    position: absolute;
+    top: 0px;
+    text-align: center;
+    margin: 0px;
+    padding: 4%;
+
+    
+    border-radius: 50%;
+
+    
+
+}
+.espacio{
+    height: 10vh;
+}
+.ultimo{
+    padding-bottom: 10vh;
+}
+//PIE DE PAGINA
+footer{
+    
+    position: relative;
+    z-index: 1;
+    position: fixed;
+    background-color:$coloresPrimarios;
+    bottom: 0vh;
+    color:$colorLetras;
+    width: 100vw;
+    height: 10vh;
+    div.iconosPie{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        
+    }
+}
+.textoPie{
+    font-family:$letarPrimaria;
+    font-size: 15px;
+}
+
+@media (min-width:770px) {
+    
+    header div.contenedor{
+        display: flex;
+        flex-direction: row;
+        
+        div.icono{
+            display: none;
+            
+        }
+        .nav{
+            display:flex;
+            
+            position: relative;
+            width: auto;
+            height: 10vh;
+            .lista{
+                
+                align-self:center;
+                
+                margin: 0px;
+                display: flex;
+                flex-direction: row;
+                justify-content:space-around;
+            }
+            .items{
+                padding-left: 5px;
+                
+            }
+            .mostar{
+                display: none;
+            }
+        }
+        
+        .salir{
+            display: none;
+        }
+        
+    }
+    main{
+        //color: rgb(114, 79, 79);
+        background-image: url("../IMAGENES/bebidas/fondo2.jpg");
+        background-repeat: no-repeat;
+        background-size:cover;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        align-items:start ;
+        width: auto;
+        .adentro{
+            grid-column: 1/6;
+        }
+        .evento{
+            grid-column: 1/6;
+        }
+        .promo{    
+            grid-column: 1/2;
+        }
+        .combos{
+            width: 20vw;
+            grid-column: 2/3;
+
+        }
+        .comidas{
+            width: 20vw;
+            grid-column: 3/4;
+        }
+        .unitario{
+            width: 20vw;
+            grid-column: 4/5;
+        }
+        .tragos{
+            width: 20vw;
+
+            grid-column: 5/6;
+        }
+        section{
+            width: 18vw;
+            //border: solid 2px black;
+            background-color: rgba(1, 48, 48, 0.5);
+            border-radius: 10px;
+
+            .titulosSeccion{
+                font-size: 20px;
+            }
+            .productoNombre{
+                font-size: 15px;
+            }
+            .contenedorImagen{
+                width: 10vw;
+                .costo{
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}
+    
+
+    
+
+
+
